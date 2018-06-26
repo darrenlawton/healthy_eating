@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/app_background"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@id/textView"
+        android:layout_marginTop="5dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="50dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:dividerHeight="5dp"
+        android:id="@+id/reasonList"
+        android:cacheColorHint="@android:color/background_dark"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:text="Log of non healthy days:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bBack"
+        android:background="@android:drawable/ic_menu_revert"
+        android:scaleX=".55"
+        android:layoutDirection="rtl"
+        android:layout_alignLeft="@id/imageView"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/app_background"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="I am.."
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/bDescription"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+    <Button
+        android:text="Max"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignStart="@id/bDescription"
+        android:layout_below="@+id/bDescription"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/bMax"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+    <Button
+        android:text="Log Data"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignStart="@id/bDescription"
+        android:layout_below="@+id/bMax"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/bData"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+
+    <Button
+        android:text="Message"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/bCall"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+    <Button
+        android:text="Stats"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignStart="@id/bCall"
+        android:layout_below="@+id/bCall"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/bStats"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+    <Button
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignStart="@id/bCall"
+        android:layout_below="@+id/bStats"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/bSettings"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bBack"
+        android:background="@android:drawable/ic_menu_revert"
+        android:scaleX=".55"
+        android:layoutDirection="rtl"
+        android:layout_alignLeft="@id/imageView"/>
+
+
+</RelativeLayout>
